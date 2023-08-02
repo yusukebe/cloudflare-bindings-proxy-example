@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "dev:proxy": "cf-bindings-proxy compatibility-date 2023-08-01 --kv=MY_KV",
+    "build": "vite build --ssr",
+    "deploy": "wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "cf-bindings-proxy": "^0.2.4",
+    "hono": "^3.3.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230628.0",
+    "@hono/node-server": "^1.1.1",
+    "@types/node": "^20.4.5",
+    "vite": "^4.4.8",
+    "wrangler": "^3.4.0"
+  }
+}
